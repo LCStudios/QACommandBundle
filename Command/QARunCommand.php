@@ -31,7 +31,7 @@ class QARunCommand extends MetaCommand
             );
     }
 
-    protected function getCommandArray(InputInterface $input)
+    public function getCommandArray(InputInterface $input)
     {
         return [
             'phploc' => ['command' => 'qa:phploc'],
