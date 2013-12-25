@@ -33,7 +33,7 @@ class PhpCsCommand extends ExternalCommand
         $appPath = $kernel->getRootDir();
 
         $phpCs = $appPath.'/../bin/phpcs' ;
-        $command = $phpCs.' --standard='.$appPath.'/../phpcs.xml --extensions=php';
+        $command = $phpCs.' --standard='.$appPath.'/../ruleset.xml --extensions=php';
 
         if ($input->getOption('ci')) {
             $command .= ' --report=checkstyle --report-file='.$appPath.'/../build/logs/checkstyle.xml';
